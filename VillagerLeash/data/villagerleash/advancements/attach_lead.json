@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "use_lead_on_villager": {
+            "trigger": "minecraft:item_used_on_entity",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:lead"
+                },
+                "entity": {
+                    "type": "minecraft:villager"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "villagerleash:leash_attach"
+    },
+    "display": {
+        "title": "Villager Leashed!",
+        "description": "Vous avez attaché un villageois avec une laisse.",
+        "icon": {
+            "item": "minecraft:lead"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true
+    }
+}
